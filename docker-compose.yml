@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  staticfileserver:
+    image: ${DOCKER_REGISTRY}staticfileserver:${SANNEL_ARCH}
+    build:
+      context: .
+      dockerfile: StaticFileServer\Dockerfile

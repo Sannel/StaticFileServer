@@ -1,0 +1,17 @@
+image: sannel/staticfileserver:latest
+manifests:
+  -
+    image: sannel/staticfileserver:win
+    platform:
+      architecture: amd64
+      os: windows
+  -
+    image: sannel/staticfileserver:linux-x86_64
+    platform:
+      architecture: amd64
+      os: linux
+  -
+    image: sannel/staticfileserver:linux-armv7l
+    platform:
+      architecture: arm
+      os: linux
